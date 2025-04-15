@@ -1,7 +1,7 @@
 let combustivel = prompt("Quanto de combustivel tem ?")
 let climaPlaneta = prompt("o clima esta bom (sim/nao)")
 
-// climaPlaneta = climaPlaneta.toLocaleLowerCase
+climaPlaneta = climaPlaneta.toLocaleLowerCase()
 
 
 if (combustivel >= 50 && climaPlaneta == "sim"){
