@@ -3,9 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aula1_HTml</title>
+    
 </head>
 <body>
     
+    <h1>Titulo 1</h1>
+    <h2>Titulo 2</h2>
+    <h3>Titulo 3</h3>
+    <h4>Titulo 4</h4>
+    <h5>Titulo 5</h5>
+    <h6>Titulo 6</h6>
+
+    <p>Conteudo do paragrafo</p>
+<!-- esse tambem pode escrever, mas é pouco usado -->
+    <span>Tambem da pra escrever textos</span>
+<!--//ele pula um linha -->
+    <br>
+<!--separa com uma linha na metade da pagina-->
+    <hr>
+<!-- ele faz uma lista ordenada (ol),enquanto o (li) é so pra colocar o conteudo -->
+    <ol>
+        <li>macarrao</li>
+        <li>bergamota</li>
+        <li>pudim</li>
+    </ol>
+<!-- esse cria uma lista mas nao é ordenada, so colocando o ponto -->
+    <ul>
+        <li>macarrao</li>
+        <li>bergamota</li>
+        <li>pudim</li>
+    </ul>
+<!-- esse é para criar uma tabela/se adicionar o comando (border)ja fica com as bordas -->
+    <table border="1">
+        <!-- esse é o cabeçalho da tabela, ou seja as colunas -->
+        <thead>
+            <th>produto</th>
+            <th>valor</th>
+            <th>forma de pagamento</th>
+
+        </thead>
+
+        <!-- esse é o corpo da tabela, onde vai ficar os valores e informaçoes -->
+        <tbody>
+            <!-- quanto mais (tr) por, mais linha vao ter -->
+            <tr>  <!--(tr) é a linha-->
+            <!-- o (td) tem que ser equivalente a quantidades de colunas que voce tem -->
+                <td>macarrao</td> <!-- (td) é basicamente a coluna-->
+                <td>R$50</td>
+                <td>Debito</td>
+            </tr>
+            <tr>
+                <td>feijao </td>
+                <td>R$20</td>
+                <td>Debito</td>
+            </tr>
+            <tr>
+                <td>paleta de porco</td>
+                <td>R$50</td>
+                <td>Credito</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- para colocar imagem é esse comando -->
+    <img src= "legal.jpg"> <!-- se colocar comando (width) e (height) da para manipular o tamanho da img-->
+  
+  <!-- esse é para colocar link, tem o comando (target) ele serve para modificar o jeito que abre o link -->
+   <!-- o (_blank) serve para abrir em outra pagina o link -->
+    <a target="_blank" href="https://internacional.com.br/">Aqui se coloca Link</a>
 </body>
 </html>
