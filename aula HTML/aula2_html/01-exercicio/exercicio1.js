@@ -14,7 +14,7 @@ function subtrair(){
 
   total = n1 - n2
 
-  alert("A subtração é: "+total)
+  alert(`A subtração é: ${total}`)
 }
 
 function multiplicaçao(){
