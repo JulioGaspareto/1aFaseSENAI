@@ -87,3 +87,76 @@ function Exercicio14(){
 function Resultado(){
     alert("voce clicou "+ contador)
 }
+
+// while é o enquanto do Portugol
+
+function ExemploWhile(){
+
+    let idadeUser = Number(prompt("Digite sua idade para passar\n Sua idade tem que ser +18"))
+
+    while(idadeUser < 18){
+        alert ("Voce nao tem idade suficiente para entrar no site")
+        idadeUser = Number(prompt("Digite sua idade para passar\n Sua idade tem que ser +18"))
+    }
+    alert("acesso libertado")
+
+}
+function gerarSenha(){
+    const caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$¨&*"
+    const numeroAleatorio = Math.floor(Math.random()* caracteres.length );
+
+    return caracteres.charAt(numeroAleatorio)
+}
+
+
+function Exercicio18(){
+
+    let quantidade = Number(prompt("Digite a quantidade de carcteres que tera na sua senha"))
+    let senha = ""
+    while(quantidade > 0 ){
+
+        senha = senha + gerarSenha()
+        quantidade = quantidade - 1
+
+       
+    }
+    alert ("a senha é: "+ senha)
+
+}
+function Exercicio15(){
+    let numeroDoUsuario = Number(prompt("Tente acertar o meu numero \n Digite um numero de 1 a 100"))
+
+  let numeroSistema = Math.ceil(Math.random()*(100 - 1)+1)
+
+  while (numeroDoUsuario != numeroSistema){
+
+    numeroDoUsuario = prompt("Nao é "+numeroDoUsuario+ "\ntente novamente ")
+  }
+    alert ("voce acertou parabens")
+}
+
+function Exercicio20 (){
+
+    let p1 ="ABELHA" , p2= "PORCO" , p3= "ARVORE", p4= "BERGAMOTA", p5 = "PRAIA"
+
+    let   ABELHA = 1, PORCO =2 , ARVORE=3 , BERGAMOTA = 4, PRAIA = 5
+
+    
+
+        sortearPalavra =  Math.ceil(Math.random()*(5 - 1)+1)
+
+        if (ABELHA == sortearPalavra ){
+           let visivelLetras =  Math.floor(Math.random()* p1.length );
+
+           return P1.charAt(visivelLetras)
+
+           
+
+
+        }
+
+
+    
+
+
+}
