@@ -135,8 +135,14 @@ function ExercicioP1_9(){
 function ExercicioP1_10(){
 
     let repetir = 1 , p2 = ""
-    while 
+    while (repetir <= 100){
 
+        if (repetir % 4 === 0 ){
+
+            p2 += repetir + " , "
+        }repetir++
+    }
+alert("Conte até 100 e imprima somente os divisíveis por 4.:\n"+p2.slice(0,-2))
 }
 
 
