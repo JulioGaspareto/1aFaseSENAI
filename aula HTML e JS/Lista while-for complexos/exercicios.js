@@ -55,5 +55,28 @@ function ExercicioP1_04(){
     let n1 = Number (prompt("Digite o primeiro numero"))
     let n2 = Number (prompt("Digita o segundo numero "))
 
-    while ()
+    while (n1 < 0 && n2 < 0 ||n1>0 && n2 > 0){
+
+        alert("Os dois sao positivos ou negativos\nDigite valores diferentes")
+        n1 = Number (prompt("Digite o primeiro numero"))
+        n2 = Number (prompt("Digita o segundo numero "))
+    }
+
+    if (n1 >= 0 && n2 < 0 || n1<0 && n2 >= 0 ){
+        alert("conseguiu")
+    }
+}
+// 5. Peça uma nota. Exiba "Aprovado" se a nota for maior que 6 e menor ou igual a
+// 10.
+function ExercicioP1_05(){
+
+    const aprovaUser = 6 
+    let notaUser = Number(prompt("Digite sua nota"))
+    
+    if(aprovaUser > notaUser){
+        alert(`Sua nota foi ${notaUser} e infelizmente voce nao foi aprovado`)
+    } else {
+        alert(`Sua nota foi ${notaUser} e voce foi aprovado`)
+    }
+    
 }
