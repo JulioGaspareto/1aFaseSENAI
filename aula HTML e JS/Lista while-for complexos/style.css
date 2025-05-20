@@ -1,6 +1,55 @@
-button{
-    background-color:black;
-    color: aliceblue;
-    border-radius: 50px;
-    
+body{
+
 }
+.button {
+    --bg: #000;
+    --hover-bg: #ff90e8;
+    --hover-text: #000;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid var(--bg);
+    border-radius: 4px;
+    padding: 0.8em 4em;
+    background: var(--bg);
+    transition: 0.2s;
+    
+  }
+  
+  .button:hover {
+    color: var(--hover-text);
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+  }
+  
+  .button:active {
+    transform: translate(0);
+    box-shadow: none;
+  }
+
+  .shadow-2,
+  .bt:hover,
+  .context_menu_pai,
+  .box_login,
+  .datepicker.dropdown-menu,
+  .dialogbox,
+  .overflow-menu ul {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  }.transition-1,
+  .bt {
+    transition: all .3s ease-out;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+  .bt {
+    border: 0;
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  

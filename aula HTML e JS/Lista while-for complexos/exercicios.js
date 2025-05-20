@@ -80,3 +80,52 @@ function ExercicioP1_05(){
     }
     
 }
+function ExercicioP1_06(){
+    let numeroUsuario = Number(prompt("Digite um numero de 1 a 100:"))
+    while(numeroUsuario >100 || numeroUsuario < 1) {
+        numeroUsuario = Number(prompt("Numero invalido"))
+    }
+    alert(`O numero ${numeroUsuario} é valido`)
+
+}
+function ExercicioP1_07(){
+
+    let idadeUser = Number(prompt("Digite sua idade:"))
+    let estudaUSer = prompt("Voce estuda?\nSim\nNao")
+
+    estudaUSer = estudaUSer.toLocaleLowerCase()
+
+    if (idadeUser < 18 || estudaUSer == "sim" ){
+        alert("Voce tem meia entrada")
+
+    }else{
+    alert("voce nao tem meia entrada")
+}
+}
+function ExercicioP1_08(){
+    let termosUser = prompt("Voce aceita os termos do site?\nSim\nNao")
+     termosUser = termosUser.toLocaleLowerCase()
+       while(termosUser !== "sim"){
+        alert("Aceite os termos para proceguir")
+        termosUser = prompt("Voce aceita os termos do site?\nSim\nNao")
+       }
+    let emailUser = prompt("Ja registrou um email?\nSim\nNao")
+      emailUserUser = emailUser.toLocaleLowerCase()
+         if (emailUser == "sim"){
+            alert("Registro Completo")
+         }else {
+            alert("Registro Incompleto")
+         }
+}
+function ExercicioP1_09(){
+
+    let pesoUser = Number(prompt("Digite seu peso (Kg):"))
+    let alturaUser = Number(prompt("Digita sua altura (m)"))
+
+    if((pesoUser >= 50 && pesoUser <= 90) && alturaUser >= 1.60){
+        alert("apto para o esporte")
+    }else {
+        alert("nao")
+    }
+
+}
