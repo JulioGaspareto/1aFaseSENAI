@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Telas</title>
+</head>
+<body>
+
+    <nav>
+        <button onclick="mostrarLogin()">Login</button>
+        <button onclick="mostrarCadastro()">Cadastro</button>
+    </nav>
+    <h1>Mshake 🍦</h1>
+    <div id="login">
+        <h2>Login</h2>
+        <label for="email">email:</label>
+        <input type="text" id="email">
+        <label for="senha">senha:</label>
+        <input type="password"  id="senha">
+        <br>
+        <button onclick="logarUser()">Login</button>
+        
+        
+    </div>
+
+    
+    <div id="cadastro">
+        <h2>Cadastro</h2>
+        <label for="nome">nome:</label>
+        <input type="text" id="nome">
+        <label for="emailRegister">email:</label>
+        <input type="text" id="emailRegister">
+        <br>
+        <label for="senhaRegister">senha:</label>
+        <input type="password" name="" id="senhaRegister">
+        <br>
+        <button onclick="registrarUser()">Registrar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
