@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja do Roger</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url(fundoFazenda.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="conteinerPrincipal" id="conteinerPrincipal">
+            <div class="titulo">
+                <h1>Lista de compras</h1>
+                <button class="botaoCadastro" onclick="chamarCadastro()">Cadastrar novos itens</button>
+            </div>
+            <div class="conteudoLista">
+                <ol id="minhaLista">
+
+                </ol>
+
+            </div>
+        </div>
+    </nav>
+    <div class="conteinerCadastro" id="conteinerCadastro">
+
+        <div class="titulo">
+            <h1>Cadastrar Itens</h1>
+            <button onclick="voltarVoltado()">Voltar</button>
+
+        </div>
+        <div class="conteudoCadastro">
+            <label for="nome">Nome do Item</label>
+            <input type="text" name="nome" id="nome">
+            <button onclick="adicionarItem()">Cadastrar</button>
+        </div>
+    </div>
+
+
+    <script src="back.js"></script>
+</body>
+
+</html>
