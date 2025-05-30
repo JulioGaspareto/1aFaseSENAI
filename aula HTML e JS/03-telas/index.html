@@ -6,42 +6,50 @@
     <link rel="stylesheet" href="style.css">
     <title>Telas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <nav>
-        <button onclick="mostrarLogin()">Login</button>
-        <button onclick="mostrarCadastro()">Cadastro</button>
-    </nav>
     <h1>Muro de Pedras</h1>
-    <div id="login">
-        <h2>Login</h2>
-        <label for="email">email:</label>
-        <input type="text" id="email">
-        <label for="senha">senha:</label>
-        <input type="password"  id="senha">
-        <br>
-        <button onclick="logarUser()">Login</button>
-        
-        
-    </div>
-
+    <nav>
+        <button id="esconderBL" onclick="mostrarLogin()">Login</button>
+        <button id="esconderBC" onclick="mostrarCadastro()">Cadastro</button>
+        <button id="esconderBP" onclick="mostrarProdutos()">Produtos</button>
+    </nav>
     
-    <div id="cadastro">
+    <section id="login">
+        <h2>Login</h2>
+        <div>
+            <label for="email">email:</label>
+            <input type="text" id="emailLogar">
+        </div>
+        <div>
+            <label for="senha">senha:</label>
+            <input type="password"  id="senhaLogar">
+        </div>
+        <button onclick="logarUser()">Login</button>
+    </section>
+    <section id="cadastro">
         <h2>Cadastro</h2>
-        <label for="nome">nome:</label>
-        <input type="text" id="nome">
-        <label for="emailRegister">email:</label>
-        <input type="text" id="emailRegister">
-        <br>
-        <label for="senhaRegister">senha:</label>
-        <input type="password" name="" id="senhaRegister">
-        <br>
+        <div class="conteinerInput">
+            <label for="nome">nome:</label>
+            <input type="text" id="nome">
+        </div>
+        <div class="conteinerInput">
+            <label for="emailRegister">email:</label>
+            <input type="text" id="emailRegister">
+        </div>
+        <div class="conteinerInput">
+            <label for="senhaRegister">senha:</label>
+            <input type="password" name="" id="senhaRegister">
+        </div>
         <button onclick="registrarUser()">Registrar</button>
-    </div>
+    </section>
+    <section id="produtos">
+        <h2>Produtos</h2>
+        <div class="conteinerInput"></div>
+    
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
