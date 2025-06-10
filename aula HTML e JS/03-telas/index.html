@@ -8,29 +8,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    
 </head>
 <body>
-    <h1>Muro de Pedras</h1>
-    <nav>
+    <!-- <h1>Muro de Pedras</h1> -->
+    
+    <nav id="navBar">
         <button id="esconderBL" onclick="mostrarLogin()">Login</button>
         <button id="esconderBC" onclick="mostrarCadastro()">Cadastro</button>
         <button id="esconderBP" onclick="mostrarProdutos()">Produtos</button>
     </nav>
-    
-    <section id="login">
-        <h2>Login</h2>
-        <div>
-            <label for="email">email:</label>
-            <input type="text" id="emailLogar">
-        </div>
-        <div>
-            <label for="senha">senha:</label>
-            <input type="password"  id="senhaLogar">
-        </div>
-        <button onclick="logarUser()">Login</button>
+    <main>   
+
+        <section id="login">
+            <h1>Login</h1>
+            <div>
+                <label for="email">email:</label>
+                <input type="text" id="emailLogar">
+            </div>
+            <div>
+                <label for="senha">senha:</label>
+                <input type="password"  id="senhaLogar">
+            </div>
+            <button onclick="logarUser()">Login</button>
+            <button onclick="mostrarCadastro()" class="bt-secundario">Nao sou cadastrado</button>
     </section>
     <section id="cadastro">
-        <h2>Cadastro</h2>
+        <h1>Cadastro</h1>
         <div class="conteinerInput">
             <label for="nome">nome:</label>
             <input type="text" id="nome">
@@ -43,13 +47,16 @@
             <label for="senhaRegister">senha:</label>
             <input type="password" name="" id="senhaRegister">
         </div>
+        
         <button onclick="registrarUser()">Registrar</button>
+        <button onclick="mostrarLogin()" class="bt-secundario">Ja sou cadastrado</button>
     </section>
     <section id="produtos">
-        <h2>Produtos</h2>
+        <h1>Produtos</h1>
         <div class="conteinerInput"></div>
-    
+        
     </section>
+</main>
     <script src="script.js"></script>
 </body>
 </html>
