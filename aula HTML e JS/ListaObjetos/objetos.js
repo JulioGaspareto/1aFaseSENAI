@@ -189,3 +189,45 @@ return null}
 moedaConvert.converterMoedas(100, "bra", "us")
 moedaConvert.converterMoedas(50, "euro", "bra")
 moedaConvert.converterMoedas(20, "us", "us") 
+
+
+let banco = {
+    contasBanco:[
+        {nome:"Julio", saldo: 1000},
+        {nome:"Vitor", saldo: 4300},
+        {nome:"Yuri", saldo: 200},
+        {nome:"Rodrigo", saldo: 453}
+        
+    ],
+
+    depositar(nome,valor){
+        let conta = this.contasBanco.find(cont => cont.nome === nome)
+        if (!conta) {return console.log("conta nao encontrada")
+    }else{
+        conta.saldo += valor 
+        console.log("deposito de R$" + valor + ", para "+nome+ "\nSaldo atual: R$"+conta.saldo)
+    }},
+
+    sacar (nome,valor){
+        let conta = this.contasBanco.find(cont => cont.nome === nome)
+        if (!conta) {return console.log("conta nao encontrada")
+    }else if (conta.saldo < valor){return console.log("saldo insuficiente")
+}else{
+    conta.saldo -= valor 
+    console.log ("saque de R$"+ valor + "realizado. Valor atual de R$"+conta.saldo)
+}
+    },
+
+saldoTotal() {
+    let total = this.contasBanco.reduce((soma, cont) => soma + cont.saldo,0)
+    console.log("o saldo do banco é de R$"+total)
+
+return total
+}
+    }
+
+
+
+banco.depositar("Julio",360)
+banco.sacar("Ana", 100)
+banco.saldoTotal()
